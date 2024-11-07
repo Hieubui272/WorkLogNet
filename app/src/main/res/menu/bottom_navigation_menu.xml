@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        android:iconTint="@color/colorPrimary"
+        android:titleTextColor="@color/colorPrimaryDark" />
+
+    <item
+        android:id="@+id/navigation_analysis"
+        android:icon="@drawable/ic_analysis"
+        android:title="Analysis"
+        android:iconTint="@color/colorPrimary"
+        android:titleTextColor="@color/colorPrimaryDark" />
+
+    <item
+        android:id="@+id/navigation_add"
+        android:icon="@drawable/ic_add"
+        android:title="Add"
+        android:iconTint="@color/colorAccent"
+        android:titleTextColor="@color/colorPrimaryDark" />
+
+    <item
+        android:id="@+id/navigation_sns"
+        android:icon="@drawable/ic_sns"
+        android:title="SNS"
+        android:iconTint="@color/colorPrimary"
+        android:titleTextColor="@color/colorPrimaryDark" />
+
+    <item
+        android:id="@+id/navigation_my"
+        android:icon="@drawable/ic_my"
+        android:title="My"
+        android:iconTint="@color/colorPrimary"
+        android:titleTextColor="@color/colorPrimaryDark" />
+
+</menu>

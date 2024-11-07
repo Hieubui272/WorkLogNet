@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#E0F7FA"
+    android:layout_marginBottom="12dp"
+    android:elevation="4dp"
+    android:layout_gravity="center">
+
+    <!-- Nội dung bài viết -->
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post content here"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Hình ảnh bài viết -->
+    <ImageView
+        android:id="@+id/ivPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_edittext_background"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Dấu thời gian bài đăng -->
+    <TextView
+        android:id="@+id/tvTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timestamp"
+        android:textColor="#757575"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Số lượt thích -->
+    <TextView
+        android:id="@+id/tvLikeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 likes"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#757575"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Nút Like, Comment và Share trong cùng một hàng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center">
+
+        <!-- Like -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:id="@+id/ivLike"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_like"
+                android:tint="#757575" />
+
+            <TextView
+                android:id="@+id/tvLikeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Like"
+                android:textColor="#757575"
+                android:layout_marginStart="4dp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <!-- Comment -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:id="@+id/ivComment"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_comment"
+                android:tint="#757575" />
+
+            <TextView
+                android:id="@+id/tvCommentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment"
+                android:textColor="#757575"
+                android:layout_marginStart="4dp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <!-- Share -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/ivShare"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_share"
+                android:tint="#757575" />
+
+            <TextView
+                android:id="@+id/tvShareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="#757575"
+                android:layout_marginStart="4dp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

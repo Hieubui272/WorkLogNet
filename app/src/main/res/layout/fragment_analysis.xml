@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E0F7FA"
+    tools:context=".AnalysisFragment">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Income Analysis"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#00796B"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Đường phân cách -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#B2DFDB"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Tổng thu nhập -->
+    <TextView
+        android:id="@+id/tvTotalIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Income: $0.00"
+        android:textSize="18sp"
+        android:textColor="#00796B"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Đường phân cách -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#B2DFDB"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalIncome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Biểu đồ tròn -->
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalIncome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Thu nhập theo nơi làm việc -->
+    <TextView
+        android:id="@+id/tvWorkplaceIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Income by Workplace: A"
+        android:textSize="16sp"
+        android:textColor="#00796B"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/pieChart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Đường phân cách -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#B2DFDB"
+        app:layout_constraintTop_toBottomOf="@id/tvWorkplaceIncome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Dãy nút chọn khoảng thời gian -->
+    <HorizontalScrollView
+        android:id="@+id/scrollViewButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvWorkplaceIncome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Các nút chọn khoảng thời gian -->
+            <Button
+                android:id="@+id/btnToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00796B"
+                android:textColor="@android:color/white"
+                android:text="1D (Today)" />
+
+            <Button
+                android:id="@+id/btnWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#00796B"
+                android:textColor="@android:color/white"
+                android:text="7D (This Week)" />
+
+            <Button
+                android:id="@+id/btnMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#00796B"
+                android:textColor="@android:color/white"
+                android:text="30D (This Month)" />
+
+            <Button
+                android:id="@+id/btnYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#00796B"
+                android:textColor="@android:color/white"
+                android:text="1Y (This Year)" />
+
+            <Button
+                android:id="@+id/btnOption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#00796B"
+                android:textColor="@android:color/white"
+                android:text="Custom Range" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Ảnh Analysis -->
+    <ImageView
+        android:id="@+id/ivAnalysisImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/analisis"
+        android:contentDescription="Analysis Image"
+        app:layout_constraintTop_toBottomOf="@id/scrollViewButtons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "463490996942",
+    "firebase_url": "https://worklognet-092024-default-rtdb.firebaseio.com",
+    "project_id": "worklognet-092024",
+    "storage_bucket": "worklognet-092024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463490996942:android:eb6a01880d1ac85cbe4e9f",
+        "android_client_info": {
+          "package_name": "com.project.worklognet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463490996942-gdnavk6heoe8018r6imqqg3ohl1e81mg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPfm6GRX5WP7Fj0BXamRryI-coPibgJf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463490996942-gdnavk6heoe8018r6imqqg3ohl1e81mg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#E0F7FA"
+    android:gravity="center">
+
+    <!-- Hình ảnh minh họa Work -->
+    <ImageView
+        android:id="@+id/workImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/work"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Work Illustration"
+        android:scaleType="fitCenter" />
+
+    <!-- Input for Work Place với viền bo tròn -->
+    <EditText
+        android:id="@+id/etWorkPlace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Work Place"
+        android:inputType="text"
+        android:background="@drawable/rounded_edittext_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif" />
+
+    <!-- Input for Wage Per Hour với viền bo tròn -->
+    <EditText
+        android:id="@+id/etWagePerHour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wage per Hour"
+        android:inputType="numberDecimal"
+        android:background="@drawable/rounded_edittext_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif" />
+
+    <!-- Display start time với viền bo tròn -->
+    <EditText
+        android:id="@+id/tvStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Time"
+        android:background="@drawable/rounded_edittext_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:focusable="false"
+        android:clickable="false" />
+
+    <!-- Display end time với viền bo tròn -->
+    <EditText
+        android:id="@+id/tvEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Time"
+        android:background="@drawable/rounded_edittext_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:focusable="false"
+        android:clickable="false" />
+
+</LinearLayout>
