@@ -6,7 +6,7 @@
     android:padding="24dp"
     android:background="#E0F7FA">
 
-    <!-- Hình ảnh đăng ký -->
+    <!-- image -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -15,7 +15,7 @@
         android:scaleType="fitCenter"
         android:contentDescription="Register Illustration" />
 
-    <!-- Nút quay lại -->
+    <!-- back -->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
         android:elevation="2dp"
         android:fontFamily="sans-serif-medium" />
 
-    <!-- Tiêu đề -->
+    <!-- resister -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
         android:paddingBottom="16dp"
         android:fontFamily="sans-serif-medium" />
 
-    <!-- Trường Nickname -->
+    <!-- Nickname -->
     <EditText
         android:id="@+id/etNickname"
         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
         android:layout_marginBottom="12dp"
         android:fontFamily="sans-serif" />
 
-    <!-- Trường Email -->
+    <!-- Email -->
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
@@ -62,7 +62,7 @@
         android:layout_marginBottom="12dp"
         android:fontFamily="sans-serif" />
 
-    <!-- Trường Password -->
+    <!-- Password -->
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
@@ -74,7 +74,7 @@
         android:layout_marginBottom="12dp"
         android:fontFamily="sans-serif" />
 
-    <!-- Trường Confirm Password -->
+    <!-- Confirm Password -->
     <EditText
         android:id="@+id/etConfirmPassword"
         android:layout_width="match_parent"
@@ -86,7 +86,7 @@
         android:layout_marginBottom="20dp"
         android:fontFamily="sans-serif" />
 
-    <!-- Nút Register -->
+    <!-- Register -->
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"

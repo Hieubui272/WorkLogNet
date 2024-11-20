@@ -7,7 +7,7 @@
     android:padding="16dp"
     android:background="#F5F5F5">
 
-    <!-- Tiêu đề Nhập nội dung -->
+    <!-- new post -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
@@ -19,7 +19,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="12dp" />
 
-    <!-- Ô nhập nội dung bài đăng -->
+    <!-- enter post content -->
     <EditText
         android:id="@+id/etPostContent"
         android:layout_width="match_parent"
@@ -29,7 +29,6 @@
         android:padding="12dp"
         android:layout_marginBottom="12dp" />
 
-    <!-- Bố trí nút chọn ảnh và nút đăng bài trong hàng ngang -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,7 +36,7 @@
         android:gravity="center_horizontal"
         android:layout_marginBottom="12dp">
 
-        <!-- Nút Chọn ảnh -->
+        <!-- select image -->
         <Button
             android:id="@+id/btnSelectImage"
             android:layout_width="wrap_content"
@@ -47,7 +46,7 @@
             android:textColor="@android:color/white"
             android:layout_marginEnd="8dp" />
 
-        <!-- Nút Đăng bài -->
+        <!-- post -->
         <Button
             android:id="@+id/btnPost"
             android:layout_width="wrap_content"
@@ -57,7 +56,7 @@
             android:textColor="@android:color/white" />
     </LinearLayout>
 
-    <!-- ImageView hiển thị ảnh đã chọn -->
+    <!-- ImageView -->
     <ImageView
         android:id="@+id/ivSelectedImage"
         android:layout_width="100dp"
@@ -67,7 +66,7 @@
         android:scaleType="centerCrop"
         android:layout_marginBottom="16dp" />
 
-    <!-- RecyclerView để hiển thị các bài đăng -->
+    <!-- RecyclerView  -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPosts"
         android:layout_width="match_parent"

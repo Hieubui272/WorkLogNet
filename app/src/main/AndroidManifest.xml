@@ -2,10 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Quyền truy cập Internet và các quyền khác -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Quyền truy cập bộ nhớ để chọn ảnh -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -64,18 +67,31 @@
             </intent-filter>
         </activity>
 
-        <!-- Các Activity mới thêm -->
+        <!-- Activity Profile -->
         <activity
             android:name=".ProfileActivity"
             android:exported="false" />
+
+        <!-- Activity Settings -->
         <activity
             android:name=".SettingsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Settings"
+            android:theme="@style/Theme.WorkLogNet" />
+
+        <!-- Activity Notifications -->
         <activity
-            android:name=".NotificationActivity"
-            android:exported="false" />
+            android:name=".NotificationsActivity"
+            android:exported="false"
+            android:label="Notifications"
+            android:theme="@style/Theme.WorkLogNet" />
+
+        <!-- Activity Payment (nếu có sử dụng sau này) -->
         <activity
             android:name=".PaymentActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Payment"
+            android:theme="@style/Theme.WorkLogNet" />
+
     </application>
 </manifest>

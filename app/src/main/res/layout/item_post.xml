@@ -9,7 +9,7 @@
     android:elevation="4dp"
     android:layout_gravity="center">
 
-    <!-- Nội dung bài viết -->
+    <!-- content -->
     <TextView
         android:id="@+id/tvContent"
         android:layout_width="wrap_content"
@@ -20,7 +20,7 @@
         android:fontFamily="sans-serif-medium"
         android:layout_marginBottom="8dp" />
 
-    <!-- Hình ảnh bài viết -->
+    <!-- image -->
     <ImageView
         android:id="@+id/ivPostImage"
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
         android:background="@drawable/rounded_edittext_background"
         android:layout_marginBottom="8dp" />
 
-    <!-- Dấu thời gian bài đăng -->
+    <!-- time  -->
     <TextView
         android:id="@+id/tvTimestamp"
         android:layout_width="wrap_content"
@@ -41,7 +41,7 @@
         android:fontFamily="sans-serif"
         android:layout_marginBottom="4dp" />
 
-    <!-- Số lượt thích -->
+    <!-- number of like  -->
     <TextView
         android:id="@+id/tvLikeCount"
         android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
         android:textColor="#757575"
         android:layout_marginBottom="8dp" />
 
-    <!-- Nút Like, Comment và Share trong cùng một hàng -->
+    <!-- Like, Comment , Share -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

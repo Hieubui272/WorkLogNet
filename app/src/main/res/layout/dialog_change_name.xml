@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#E0F7FA"> <!-- Nền xanh nhạt -->
+
+    <!-- Trường nhập tên mới với nền xanh -->
+    <EditText
+        android:id="@+id/etNewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter New Name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background" />
+
+    <!-- Nút xác nhận thay đổi tên -->
+    <Button
+        android:id="@+id/btnConfirmNameChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Name"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#00796B"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+</LinearLayout>

@@ -33,8 +33,17 @@ public class AnalysisActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
 
+    // Open Settings
+    public void openSettings(View view) {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
 
-
+    // Open Notifications
+    public void openNotifications(View view) {
+        Intent intent = new Intent(this, NotificationsActivity.class);
+        startActivity(intent);
     }
 }

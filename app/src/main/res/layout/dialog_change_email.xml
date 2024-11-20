@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#E0F7FA"> <!-- Nền xanh nhạt -->
+
+    <!-- Trường nhập email mới với nền xanh -->
+    <EditText
+        android:id="@+id/etNewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter New Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext_background" />
+
+    <!-- Nút xác nhận thay đổi email -->
+    <Button
+        android:id="@+id/btnConfirmEmailChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Email"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#00796B"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F7FA"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_background">
+
+        <!-- Tiêu đề màn hình -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Notifications"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Danh sách thông báo -->
+        <TextView
+            android:id="@+id/tvNotification1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Notification 1: This is your first notification."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext_background" />
+
+        <TextView
+            android:id="@+id/tvNotification2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Notification 2: Your schedule has been updated."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_edittext_background" />
+
+        <TextView
+            android:id="@+id/tvNotification3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Notification 3: New message from admin."
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:background="@drawable/rounded_edittext_background" />
+
+    </LinearLayout>
+</ScrollView>

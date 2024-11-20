@@ -6,14 +6,14 @@
     android:background="@drawable/rounded_background"
     android:layout_marginBottom="12dp">
 
-    <!-- Bố trí chứa tên người dùng và nút xóa -->
+    <!-- username & delete button -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical">
 
-        <!-- Tên người dùng -->
+        <!-- username -->
         <TextView
             android:id="@+id/tvUserName"
             android:layout_width="0dp"
@@ -24,7 +24,7 @@
             android:textColor="#333333"
             android:textSize="16sp" />
 
-        <!-- Nút xóa bình luận -->
+        <!-- delete button -->
         <ImageView
             android:id="@+id/ivDeleteComment"
             android:layout_width="24dp"
@@ -35,7 +35,7 @@
             android:layout_marginStart="8dp" />
     </LinearLayout>
 
-    <!-- Nội dung bình luận -->
+    <!-- content -->
     <TextView
         android:id="@+id/tvCommentText"
         android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
         android:layout_marginTop="8dp"
         android:textSize="14sp" />
 
-    <!-- Thời gian bình luận -->
+    <!-- comment time -->
     <TextView
         android:id="@+id/tvTimestamp"
         android:layout_width="wrap_content"

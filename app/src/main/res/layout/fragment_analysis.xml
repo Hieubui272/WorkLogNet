@@ -8,7 +8,7 @@
     android:background="#E0F7FA"
     tools:context=".AnalysisFragment">
 
-    <!-- Tiêu đề -->
+    <!-- income analysis -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
@@ -22,7 +22,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Đường phân cách -->
+    <!-- Divider -->
     <View
         android:layout_width="0dp"
         android:layout_height="1dp"
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
 
-    <!-- Tổng thu nhập -->
+    <!-- Total Income -->
     <TextView
         android:id="@+id/tvTotalIncome"
         android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Đường phân cách -->
+    <!-- Divider -->
     <View
         android:layout_width="0dp"
         android:layout_height="1dp"
@@ -55,7 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
 
-    <!-- Biểu đồ tròn -->
+    <!-- Pie Chart -->
     <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/pieChart"
         android:layout_width="0dp"
@@ -66,7 +66,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Thu nhập theo nơi làm việc -->
+    <!-- Income by Workplace -->
     <TextView
         android:id="@+id/tvWorkplaceIncome"
         android:layout_width="wrap_content"
@@ -79,7 +79,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Đường phân cách -->
+    <!-- Divider -->
     <View
         android:layout_width="0dp"
         android:layout_height="1dp"
@@ -89,7 +89,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
 
-    <!-- Dãy nút chọn khoảng thời gian -->
+    <!-- Time Buttons -->
     <HorizontalScrollView
         android:id="@+id/scrollViewButtons"
         android:layout_width="match_parent"
@@ -105,7 +105,6 @@
             android:orientation="horizontal"
             android:gravity="center">
 
-            <!-- Các nút chọn khoảng thời gian -->
             <Button
                 android:id="@+id/btnToday"
                 android:layout_width="wrap_content"
@@ -152,16 +151,19 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <!-- Ảnh Analysis -->
+    <!-- Image -->
     <ImageView
         android:id="@+id/ivAnalysisImage"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
         android:src="@drawable/analisis"
         android:contentDescription="Analysis Image"
         app:layout_constraintTop_toBottomOf="@id/scrollViewButtons"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

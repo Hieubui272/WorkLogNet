@@ -6,7 +6,7 @@
     android:padding="24dp"
     android:background="#E0F7FA">
 
-    <!-- Trường nhập bình luận -->
+    <!-- enter cmt -->
     <EditText
         android:id="@+id/etComment"
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif" />
 
-    <!-- Nút Submit -->
+    <!-- Submit -->
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
@@ -30,7 +30,7 @@
         android:fontFamily="sans-serif-medium"
         android:layout_marginBottom="16dp" />
 
-    <!-- RecyclerView hiển thị bình luận -->
+    <!-- RecyclerView cmt -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvComments"
         android:layout_width="match_parent"
