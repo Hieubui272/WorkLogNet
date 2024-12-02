@@ -7,7 +7,6 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <!-- Quyền truy cập bộ nhớ để chọn ảnh -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
@@ -20,39 +19,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WorkLogNet"
         tools:targetApi="31">
-
-        <!-- Các Activity đã có -->
-        <activity
-            android:name=".ChangePasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CommentActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SnsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AddActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AnalysisActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ResetPasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
 
         <!-- LoginActivity với intent-filter để khởi động ứng dụng -->
         <activity
@@ -67,30 +33,92 @@
             </intent-filter>
         </activity>
 
-        <!-- Activity Profile -->
+        <!-- MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- ChangePasswordActivity -->
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false" />
+
+        <!-- CommentActivity -->
+        <activity
+            android:name=".CommentActivity"
+            android:exported="false" />
+
+        <!-- SnsActivity -->
+        <activity
+            android:name=".SnsActivity"
+            android:exported="false" />
+
+        <!-- AddActivity -->
+        <activity
+            android:name=".AddActivity"
+            android:exported="false" />
+
+        <!-- AnalysisActivity -->
+        <activity
+            android:name=".AnalysisActivity"
+            android:exported="false" />
+
+        <!-- ResetPasswordActivity -->
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false" />
+
+        <!-- RegisterActivity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- HomeActivity -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <!-- ProfileActivity -->
         <activity
             android:name=".ProfileActivity"
             android:exported="false" />
 
-        <!-- Activity Settings -->
+        <!-- SettingsActivity -->
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
             android:label="Settings"
             android:theme="@style/Theme.WorkLogNet" />
 
-        <!-- Activity Notifications -->
+        <!-- NotificationsActivity -->
         <activity
             android:name=".NotificationsActivity"
             android:exported="false"
             android:label="Notifications"
             android:theme="@style/Theme.WorkLogNet" />
 
-        <!-- Activity Payment (nếu có sử dụng sau này) -->
+        <!-- PaymentActivity (nếu có sử dụng sau này) -->
         <activity
             android:name=".PaymentActivity"
             android:exported="false"
             android:label="Payment"
+            android:theme="@style/Theme.WorkLogNet" />
+
+        <!-- DarkMode Activity - Loại bỏ intent-filter để tránh xung đột -->
+        <activity
+            android:name=".DarkMode"
+            android:exported="true">
+        </activity>
+
+        <!-- NotificationScreenActivity -->
+        <activity
+            android:name=".NotificationScreenActivity"
+            android:exported="false"
+            android:label="Notification Screen"
             android:theme="@style/Theme.WorkLogNet" />
 
     </application>

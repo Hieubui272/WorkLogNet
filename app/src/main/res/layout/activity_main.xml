@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView hiển thị số lượng thông báo -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp">
+
+        <!-- Biểu tượng chuông thông báo -->
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/notification"
+            android:contentDescription="Notification icon" />
+
+        <!-- Số lượng thông báo -->
+        <TextView
+            android:id="@+id/tvNotificationCount"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/circle_background"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- Button để mô phỏng like -->
+    <Button
+        android:id="@+id/btnLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Like"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#673AB7"
+        android:textColor="@android:color/white" />
+
+    <!-- Button để mô phỏng comment -->
+    <Button
+        android:id="@+id/btnComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#3F51B5"
+        android:textColor="@android:color/white" />
+
+    <!-- Button để reset thông báo -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Notifications"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#D32F2F"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

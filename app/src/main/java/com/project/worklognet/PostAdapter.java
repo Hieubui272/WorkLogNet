@@ -69,6 +69,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
 
         // Xử lý sự kiện khi nhấn nút "Share"
         holder.ivShare.setOnClickListener(v -> sharePost(post));
+
+        // Xử lý sự kiện khi nhấn nút "Delete"
+        holder.ivDelete.setOnClickListener(v -> deletePost(post, position));
     }
 
     private void toggleLike(Post post, PostViewHolder holder) {
@@ -118,6 +121,21 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         context.startActivity(Intent.createChooser(shareIntent, "Share post via"));
     }
 
+    // Hàm xóa bài viết
+    private void deletePost(Post post, int position) {
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        DocumentReference postRef = db.collection("posts").document(post.getPostId());
+
+        postRef.delete()
+                .addOnSuccessListener(aVoid -> {
+                    postList.remove(position);
+                    notifyItemRemoved(position);
+                    notifyItemRangeChanged(position, postList.size());
+                    Toast.makeText(context, "Post deleted successfully", Toast.LENGTH_SHORT).show();
+                })
+                .addOnFailureListener(e -> Toast.makeText(context, "Failed to delete post", Toast.LENGTH_SHORT).show());
+    }
+
     @Override
     public int getItemCount() {
         return postList.size();
@@ -125,7 +143,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
 
     static class PostViewHolder extends RecyclerView.ViewHolder {
         TextView tvContent, tvLikeCount, tvTimestamp;
-        ImageView ivPostImage, ivLike, ivComment, ivShare;
+        ImageView ivPostImage, ivLike, ivComment, ivShare, ivDelete;
 
         PostViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -135,7 +153,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
             ivPostImage = itemView.findViewById(R.id.ivPostImage);
             ivLike = itemView.findViewById(R.id.ivLike);
             ivComment = itemView.findViewById(R.id.ivComment);
-            ivShare = itemView.findViewById(R.id.ivShare); // Nút Share
+            ivShare = itemView.findViewById(R.id.ivShare);
+            ivDelete = itemView.findViewById(R.id.ivDelete); // Nút Delete
         }
     }
 }

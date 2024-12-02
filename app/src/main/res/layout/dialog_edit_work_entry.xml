@@ -100,12 +100,34 @@
                 android:padding="8dp"
                 android:onClick="openNotifications">
 
-                <ImageView
-                    android:id="@+id/ivNotification"
+                <!-- RelativeLayout để hiển thị chuông và số thông báo -->
+                <RelativeLayout
                     android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/notification" />
+                    android:layout_height="48dp">
 
+                    <!-- Biểu tượng chuông -->
+                    <ImageView
+                        android:id="@+id/ivNotification"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/notification" />
+
+                    <!-- Số thông báo -->
+                    <TextView
+                        android:id="@+id/tvNotificationCount"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/circle_background"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:visibility="gone" /> <!-- Ẩn nếu không có thông báo -->
+                </RelativeLayout>
+
+                <!-- Văn bản Notification -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
